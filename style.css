@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Define variable for full website */
+:root{
+  --bg-primary: #0062be;
+  --primary-100: #343434;
+  --white-color: #fff;
+  --green-dark: #084B3E;
+  --green: #00C38B;
+}
+/* Beignning Utilities styles */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: var(--heading-font-weight);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center
+}
+
+.justify-between { 
+  justify-content: space-between
+}
+
+.justify-around {
+  justify-content: space-around
+}
+
+.justify-end {
+  justify-content: flex-end
+}
+
+.direction-column {
+  flex-direction: column
+}
+
+.flex-wrap {
+  flex-flow: row wrap;
+}
+
+.align-center {
+  align-items:center;
+}
+
+.align-start {
+  align-items:flex-start;
+}
+
+.align-end {
+  align-items:flex-end;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+ ul li {
+  list-style: none;
+ }
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-primary);
+  transition: 0.3s all ease;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.main-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  position: relative;
+  max-width: 80px;
+}
+
+.main-menu ul li {
+  position: relative;
+  display: inline-block;
+}
+
+.main-menu ul li a {
+  color: var(--white-color);
+  display: block;
+  font-weight: 400;
+  padding-left: 40px;
+}
+
+.content {
+  width: 100%;
+}
+
+.content .textbox {
+  max-width: 600px;
+}
+
+.content .textbox h2 {
+  color: var(--white-color);
+  font-size: 4rem;
+  line-height: 1.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.content .textbox p {
+  color: var(--white-color);
+}
+
+.content-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: var(--white-color);
+  color: #111;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.content-image {
+  width: 600px;
+  display: flex;
+  padding-right: 50px;
+  justify-content: flex-end;
+  margin-top: 50px;
+  transition: 0.3s all ease;
+}
+
+.content-image img {
+  width: 260px;
+}
+
+.content-image:hover {
+  transform: translateY(-10px);
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+.thumb li img {
+  max-width: 40px;
+ }
+ 
+.social {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social li a {
+  display: block;
+  filter: invert(1);
+  margin: 5px 0;
+  transform: scale(0.6);
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+section {
+		padding: 100px;
+}
+
+.main-header {
+	padding: 20px 100px;
+}
+
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  section {
+		padding: 100px;
+}
+
+.main-header {
+	padding: 20px 100px;
+}
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+		padding: 100px;
+}
+
+.main-header {
+	padding: 20px 100px;
+}
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  section {
+		padding: 100px;
+}
+
+.main-header {
+	padding: 20px 100px;
+}
+
+
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+ 
+}

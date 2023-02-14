@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pepsi</title>
+    <!------ CSS here ----->
+    <link rel="stylesheet" href="style.css">
+  </head>
+ <style>  
+ 
+</style>
+  <body>
+   <div id="page">
+  <!----- Header-Area -------->
+  <section class="sec">
+      <header class="main-header">
+          <div class="logo">
+              <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+          </div>
+          <div class="main-menu">
+             <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">Products</a></li>
+                 <li><a href="#">What's new</a></li> 
+                 <li><a href="#">Newsletter</a></li>
+                 <li><a href="#">Contact</a></li>
+             </ul>
+          </div>
+      </header>
+      <!-- content section -->
+      <div class="content pos-relative d-flex justify-between align-center">
+          <div class="textbox pos-relative">
+               <h2>That's Whats<br/><span>I like</span></h2>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Inventore assumenda voluptatem, blanditiis quibusdam voluptates magni temporibus 
+                vel libero in modi non, cum tenetur ipsam ab ut laudantium sunt neque rem.</p>
+                <a href="#" class="content-btn">View All Products</a>
+          </div>
+          <div class="content-image">
+              <img src="assets/img/pepsi001.png" class="pepsi">
+          </div>
+          <ul class="thumb">
+             <li><img src="assets/img/pepsi001.png" onclick="imgSlider('assets/img/pepsi001.png'); changeBgColor('#0062be')"></li>
+             <li><img src="assets/img/pepsi002.png" onclick="imgSlider('assets/img/pepsi002.png'); changeBgColor('#e60c2c')"></li>
+             <li><img src="assets/img/pepsi003.png" onclick="imgSlider('assets/img/pepsi003.png'); changeBgColor('#1e1e1e')"></li>
+          </ul>
+          <ul class="social">
+              <li><a href="#"><img src="assets/img/facebook.png" alt=""></a></li>
+              <li><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+              <li><a href="#"><img src="assets/img/twitter.png" alt=""></a></li>
+          </ul>
+      </div>
+  </section>
+  <!-----Header-End---------->
+
+  
+  <!--------- JS here -------->
+   <script src="assets/js/jquery-1.12.4.min.js"></script>
+   <script type="text/javascript">
+      function imgSlider(anything){
+	    document.querySelector('.pepsi').src = anything;
+    }
+    function changeBgColor(color){
+      const sec = document.querySelector('.sec');
+      sec.style.background = color;
+    }
+   </script>
+   <script src="assets/js/main.js"></script>
+    </div>
+  </body>
+</html>
